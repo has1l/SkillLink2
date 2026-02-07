@@ -1,0 +1,47 @@
+# macOS
+.DS_Store
+
+# Xcode
+DerivedData/
+build/
+*.xcarchive
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# User-specific Xcode files
+xcuserdata/
+*.xcuserstate
+
+# Swift Package Manager
+.build/
+Packages/
+Package.pins
+Package.resolved (можно оставить, но не обязательно)
+
+# CocoaPods
+Pods/
+*.xcworkspace
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Env / secrets
+.env
+.env.*
+**/*Secrets*
+**/*Key*
+**/*keys*
+*.pem
+*.p12
+*.cer
+*.mobileprovision
+
+# Firebase (если репо публичный — лучше игнорировать)
+GoogleService-Info.plist

@@ -6,6 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		22C842772F2F59570007A038 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 22C842762F2F59570007A038 /* FirebaseAuth */; };
+		22C842792F2F59650007A038 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 22C842782F2F59650007A038 /* FirebaseFirestore */; };
+		22C8427B2F2F59720007A038 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 22C8427A2F2F59720007A038 /* FirebaseStorage */; };
+		22C8427D2F2F597F0007A038 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 22C8427C2F2F597F0007A038 /* FirebaseDatabase */; };
+		22C8427F2F2F598C0007A038 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 22C8427E2F2F598C0007A038 /* FirebaseAnalytics */; };
+		22C843E32F2FEE480007A038 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 22C842812F2F59B00007A038 /* GoogleSignIn */; };
+		22C844532F2FEF660007A038 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 22C844522F2FEF660007A038 /* GoogleSignInSwift */; };
+		22C845612F35C1690007A038 /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 22C845602F35C1690007A038 /* WebRTC */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		227296182F2DF3BD00F823AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +40,22 @@
 		227296212F2DF3BD00F823AB /* LlinksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LlinksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		22C842912F2F6BF00007A038 /* Exceptions for "Llinks" folder in "Llinks" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 227296072F2DF3BB00F823AB /* Llinks */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		2272960A2F2DF3BB00F823AB /* Llinks */ = {
+		22447CD72F2EBE7A00B709E1 /* Llinks */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				22C842912F2F6BF00007A038 /* Exceptions for "Llinks" folder in "Llinks" target */,
+			);
 			path = Llinks;
 			sourceTree = "<group>";
 		};
@@ -52,6 +76,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C843E32F2FEE480007A038 /* GoogleSignIn in Frameworks */,
+				22C842772F2F59570007A038 /* FirebaseAuth in Frameworks */,
+				22C844532F2FEF660007A038 /* GoogleSignInSwift in Frameworks */,
+				22C842792F2F59650007A038 /* FirebaseFirestore in Frameworks */,
+				22C8427D2F2F597F0007A038 /* FirebaseDatabase in Frameworks */,
+				22C845612F35C1690007A038 /* WebRTC in Frameworks */,
+				22C8427F2F2F598C0007A038 /* FirebaseAnalytics in Frameworks */,
+				22C8427B2F2F59720007A038 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +104,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22447D012F2F514A00B709E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		227295FF2F2DF3BB00F823AB = {
 			isa = PBXGroup;
 			children = (
-				2272960A2F2DF3BB00F823AB /* Llinks */,
+				22447CD72F2EBE7A00B709E1 /* Llinks */,
 				2272961A2F2DF3BD00F823AB /* LlinksTests */,
 				227296242F2DF3BD00F823AB /* LlinksUITests */,
+				22447D012F2F514A00B709E1 /* Frameworks */,
 				227296092F2DF3BB00F823AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,10 +148,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				2272960A2F2DF3BB00F823AB /* Llinks */,
+				22447CD72F2EBE7A00B709E1 /* Llinks */,
 			);
 			name = Llinks;
 			packageProductDependencies = (
+				22C842762F2F59570007A038 /* FirebaseAuth */,
+				22C842782F2F59650007A038 /* FirebaseFirestore */,
+				22C8427A2F2F59720007A038 /* FirebaseStorage */,
+				22C8427C2F2F597F0007A038 /* FirebaseDatabase */,
+				22C8427E2F2F598C0007A038 /* FirebaseAnalytics */,
+				22C842812F2F59B00007A038 /* GoogleSignIn */,
+				22C844522F2FEF660007A038 /* GoogleSignInSwift */,
+				22C845602F35C1690007A038 /* WebRTC */,
 			);
 			productName = Llinks;
 			productReference = 227296082F2DF3BB00F823AB /* Llinks.app */;
@@ -195,6 +243,11 @@
 			);
 			mainGroup = 227295FF2F2DF3BB00F823AB;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				22C842752F2F57C90007A038 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				22C844512F2FEF660007A038 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				22C8455F2F35C1690007A038 /* XCRemoteSwiftPackageReference "WebRTC" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 227296092F2DF3BB00F823AB /* Products */;
 			projectDirPath = "";
@@ -400,6 +453,7 @@
 				DEVELOPMENT_TEAM = 2NXN9F6VAY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Llinks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -432,6 +486,7 @@
 				DEVELOPMENT_TEAM = 2NXN9F6VAY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Llinks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -578,6 +633,84 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		22C842752F2F57C90007A038 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+		22C842802F2F59A00007A038 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		22C844512F2FEF660007A038 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
+		22C8455F2F35C1690007A038 /* XCRemoteSwiftPackageReference "WebRTC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stasel/WebRTC.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 141.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22C842762F2F59570007A038 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22C842752F2F57C90007A038 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		22C842782F2F59650007A038 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22C842752F2F57C90007A038 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		22C8427A2F2F59720007A038 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22C842752F2F57C90007A038 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		22C8427C2F2F597F0007A038 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22C842752F2F57C90007A038 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		22C8427E2F2F598C0007A038 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22C842752F2F57C90007A038 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		22C842812F2F59B00007A038 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22C842802F2F59A00007A038 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		22C844522F2FEF660007A038 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22C844512F2FEF660007A038 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		22C845602F35C1690007A038 /* WebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22C8455F2F35C1690007A038 /* XCRemoteSwiftPackageReference "WebRTC" */;
+			productName = WebRTC;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 227296002F2DF3BB00F823AB /* Project object */;
 }
